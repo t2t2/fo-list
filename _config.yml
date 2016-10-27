@@ -18,4 +18,4 @@ description: Content blocking list to deal with those dang web annoyances
 
 # Build settings
 markdown: kramdown
-theme: minima
+exclude: ["Gemfile", "Gemfile.lock"]
