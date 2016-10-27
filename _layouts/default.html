@@ -9,15 +9,15 @@
 	<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 	<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
-	<link rel="stylesheet" href="{{ "/assets/main.css" | prepend site.baseurl }}">
-	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend site.baseurl | prepend site.url }}">
+	<link rel="stylesheet" href="{{ "/assets/main.css" | prepend: site.baseurl }}">
+	<link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url }}">
 	{% include head.html %}
 </head>
 
 <body>
 	<header class="header">
 		<div class="container">
-			<h1 class="title"><a href="{{ "/" | prepend site.baseurl }}">{{ site.title | escape }}</a></h1>
+			<h1 class="title"><a href="{{ "/" | prepend: site.baseurl }}">{{ site.title | escape }}</a></h1>
 			<h2 class="subtitle">{{ site.description }}</h2>
 		</div>
 	</header>
